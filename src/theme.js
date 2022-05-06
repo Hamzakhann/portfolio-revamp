@@ -12,14 +12,14 @@ let theme = createTheme({
     }
   },
   typography: {
-    fontFamily: ["Syncopate", "Montserrat", "sans-serif"].join(",")
+    fontFamily: ["Playfair Display", "Montserrat", "sans-serif"].join(",")
   },
   h1: {
-    fontFamily: "Syncopate"
+    fontFamily: "Playfair Display"
   },
-  h2: { fontFamily: "Syncopate" },
-  h3: { fontFamily: "Syncopate" },
-  h4: { fontFamily: "Syncopate" }
+  h2: { fontFamily: "Playfair Display" },
+  h3: { fontFamily: "Playfair Display" },
+  h4: { fontFamily: "Playfair Display" },
 });
 
 theme = createTheme(theme, {
