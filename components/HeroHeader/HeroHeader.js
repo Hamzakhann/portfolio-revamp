@@ -60,7 +60,7 @@ const HeroHeader = () => {
           <Grid item xs={12} md={12} lg={5}>
             <div className={styles.hero_header_img_container}>
               <Image
-                src="/images/hero_img.png"
+                src="/Images/hero_img.png"
                 alt="hero header image"
                 width={460}
                 height={500}
