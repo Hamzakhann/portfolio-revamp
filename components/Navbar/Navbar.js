@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import styles from "./navbar.module.scss";
+import styles from "./Navbar.module.scss";
 import { PrimaryButton } from "../Button/Button";
 import Image from "next/image";
 
