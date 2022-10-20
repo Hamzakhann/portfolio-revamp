@@ -5,17 +5,17 @@ let theme = createTheme({
   palette: {
     primary: {
       main: "#DDD087",
-      contrastText: "#070707"
+      contrastText: "#070707",
     },
     error: {
-      main: "#C6112E" // custom button color (red)
-    }
+      main: "#C6112E", // custom button color (red)
+    },
   },
   typography: {
-    fontFamily: ["Playfair Display", "Montserrat", "sans-serif"].join(",")
+    fontFamily: ["Playfair Display", "Montserrat", "sans-serif"].join(","),
   },
   h1: {
-    fontFamily: "Playfair Display"
+    fontFamily: "Playfair Display",
   },
   h2: { fontFamily: "Playfair Display" },
   h3: { fontFamily: "Playfair Display" },
@@ -28,12 +28,12 @@ theme = createTheme(theme, {
       styleOverrides: {
         maxWidthXl: {
           [theme.breakpoints.up("xl")]: {
-            maxWidth: "1800px"
-          }
-        }
-      }
-    }
-  }
+            maxWidth: "1440px",
+          },
+        },
+      },
+    },
+  },
 });
 
 theme = responsiveFontSizes(theme);

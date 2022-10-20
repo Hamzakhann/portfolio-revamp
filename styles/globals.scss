@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Knewave&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
   background-color: #ffffff !important;
+}
+
+html {
+  font-family: "GoldmanBold" !important;
 }
 
 a {
@@ -12,52 +20,70 @@ a {
 * {
   box-sizing: border-box;
 }
-h1,
-h2,
-h3,
+
+@font-face {
+  font-family: "GoldmanBold";
+  src: local("GoldmanBold"), url("../fonts/Joyride-STD.otf") format("truetype");
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: 600 !important;
+  font-size: 100px !important;
+  line-height: 100% !important;
+  font-family: "GoldmanBold" !important;
+  @media only screen and (max-width: 768px) {
+    font-size: 40px !important;
+  }
+}
+
+h2 {
+  font-weight: 600 !important;
+  font-size: 42px !important;
+  line-height: 1em !important;
+  font-family: "GoldmanBold" !important;
+  @media only screen and (max-width: 768px) {
+    font-size: 30px !important;
+  }
+}
+
+h3 {
+  font-weight: 700 !important;
+  font-size: 40px !important;
+  line-height: 130% !important;
+  font-family: "GoldmanBold" !important;
+  @media only screen and (max-width: 768px) {
+    font-size: 20px !important;
+  }
+}
+
 h4 {
-  font-family: "Playfair Display", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  line-height: 1em !important;
+  font-family: "GoldmanBold" !important;
 }
 
 h5 {
-  font-family: "Montserrat" !important;
-  font-style: normal;
   font-weight: 600 !important;
-  font-size: 30px !important;
-  line-height: 83% !important;
-  @media only screen and (max-width: 767px) {
-    font-family: "Montserrat" !important;
-    font-style: normal;
-    font-weight: 600 !important;
-    font-size: 25px !important;
-    line-height: 100% !important;
-  }
+  font-size: 18px !important;
+  line-height: 1em !important;
+  font-family: "Knewave", cursive !important;
 }
 
 h6 {
-  font-family: "Montserrat" !important;
-  font-style: normal;
-  font-weight: 600 !important;
-  font-size: 25px !important;
-  line-height: 83% !important;
-  @media only screen and (max-width: 767px) {
-    font-family: "Montserrat" !important;
-    font-style: normal;
-    font-weight: 600 !important;
-    font-size: 20px !important;
-    line-height: 100% !important;
-  }
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 1em !important;
+  font-family: "GoldmanBold" !important;
 }
 
 p {
-  font-family: "Montserrat" !important;
-  font-style: normal !important;
-  font-size: 22px !important;
-  line-height: 140% !important;
-  @media only screen and (max-width: 767px) {
-    font-family: "Montserrat" !important;
-    font-style: normal !important;
-    font-size: 20px !important;
-    line-height: 144% !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 130% !important;
+  font-family: "GoldmanBold" !important;
+  @media only screen and (max-width: 768px) {
+    font-size: 14px !important;
   }
 }
