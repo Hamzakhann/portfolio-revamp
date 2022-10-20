@@ -27,7 +27,7 @@ const HeroHeader = () => {
               <div className={styles.heading}>
                 <Typography variant="h1">Hamza Khan </Typography>
                 <Image
-                  src="/images/hero_2.png"
+                  src="/Images/hero_2.png"
                   alt="hero hand image"
                   width={90}
                   height={90}
