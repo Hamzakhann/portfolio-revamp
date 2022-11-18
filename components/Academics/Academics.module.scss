@@ -1,0 +1,70 @@
+.academics_container {
+  width: 100%;
+  height: 100%;
+  padding: 6rem 3rem;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 221, 103, 0.13) 0%,
+    rgba(103, 234, 132, 0.1) 51.04%,
+    rgba(255, 0, 107, 0) 100%
+  );
+  h2 {
+    margin-bottom: 2rem;
+  }
+  .academics_content {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+
+    .section {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 3rem 0;
+      border-bottom: 1px solid #b9b9ba;
+      h5 {
+        color: #000000;
+      }
+      p {
+        color: #000000;
+        line-height: 48px !important;
+      }
+      :last-child {
+        padding-left: 1rem;
+      }
+      small {
+        line-height: 0;
+        padding: 0 !important;
+        position: relative;
+        bottom: 10px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        color: #b9b9ba;
+      }
+    }
+  }
+  .academics_img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .academics_container {
+    padding: 4rem 2rem;
+    .academics_content {
+      .section {
+        padding: 2rem 0;
+      }
+    }
+    .academics_img {
+      margin-top: 2rem;
+    }
+  }
+}

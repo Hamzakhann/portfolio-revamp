@@ -29,8 +29,8 @@ const HeroHeader = () => {
                 <Image
                   src="/Images/hero_2.png"
                   alt="hero hand image"
-                  width={90}
-                  height={90}
+                  width={60}
+                  height={60}
                   objectFit="contain"
                 />
               </div>
@@ -38,14 +38,14 @@ const HeroHeader = () => {
                 <Typography variant="h3">Full Stack Engineer</Typography>
                 <div className={styles.tag_line}></div>
               </div>
-              <Typography variant="body1">
+              <Typography variant="h4">
                 I am a passionate Full stack developer with more than 4 years
                 experience working for many companies and startups, I love to
                 create applications around web and mobile with neat and clean
                 code using best practices , test driven approach , latest trends
                 in technology and using scalable architecture.
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="h4">
                 Launched multiple projects with different teams. I am always
                 ready for new challanges. I transform Ideas into products.
                 Customer Satisfaction is my foremost duty because I believe in

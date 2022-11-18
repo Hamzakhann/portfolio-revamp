@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const PrimaryButton = styled(MuiButton)((props) => ({
   fontWeight: 400,
-  fontFamily: "GoldmanBold",
+  fontFamily: "Inter",
   fontWeight: "500",
   fontSize: "16px",
   lineHeight: "24px",
@@ -22,7 +22,7 @@ export const PrimaryButton = styled(MuiButton)((props) => ({
 
 export const SecondaryButton = styled(MuiButton)((props) => ({
   fontWeight: 400,
-  fontFamily: "GoldmanBold",
+  fontFamily: "Inter",
   fontWeight: "500",
   fontSize: "16px",
   lineHeight: "24px",
@@ -34,6 +34,6 @@ export const SecondaryButton = styled(MuiButton)((props) => ({
   border: "2px solid #000000",
   textTransform: "initial",
   "&:hover": {
-    background: "#000000",
+    background: "#FFFFFF",
   },
 }));

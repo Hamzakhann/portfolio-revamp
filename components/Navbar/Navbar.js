@@ -9,13 +9,12 @@ const Navbar = () => {
     <div className={styles.navbar_container}>
       <div className={styles.navbar_img_container}>
         <Image
-          src="/Images/nav_logo.png"
+          src="/Images/logo.png"
           alt="navbar logo"
-          width={49}
+          width={181}
           height={80}
           objectFit="contain"
         />
-        <Typography variant="h5">Hamza Khan</Typography>
       </div>
       <div className={styles.navbar_links_container}>
         <Typography variant="body1">Home</Typography>

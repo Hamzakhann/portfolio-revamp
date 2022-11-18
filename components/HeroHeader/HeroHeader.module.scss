@@ -19,7 +19,7 @@
   .hero_header {
     width: 100%;
     height: 100%;
-    padding: 0 1rem;
+    padding: 0 2rem;
     .hero_header_content_container {
       width: 100%;
       height: 100%;
@@ -36,10 +36,10 @@
         gap: 1rem;
         h1 {
           z-index: 10;
-          white-space: nowrap;
+          // white-space: nowrap;
         }
       }
-      p {
+      h4 {
         z-index: 10;
       }
       .tag_line_container {
@@ -54,7 +54,7 @@
         }
         .tag_line {
           z-index: 10;
-          width: 100%;
+          width: 50%;
           border: 3px solid #000000;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
@@ -99,14 +99,24 @@
 
 @media only screen and (max-width: 768px) {
   .hero_header_container {
+    padding: 2rem 0;
     .hero_header {
+      padding: 0 1rem;
+      .hero_header_img_container {
+        margin-bottom: 1rem;
+      }
       .hero_header_content_container {
-        p {
+        gap: 0.5rem;
+        h1 {
+          padding-top: 1rem;
+        }
+        h4 {
           text-align: justify;
         }
         .btn_container {
           gap: 1rem;
           flex-direction: column;
+          padding: 1rem 0 0 0;
           button {
             width: 100%;
           }
