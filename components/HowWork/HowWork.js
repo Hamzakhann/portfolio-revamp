@@ -18,7 +18,7 @@ const HowWork = () => {
                 height={90}
                 objectFit="contain"
               />
-              <h3>Go Hourly</h3>
+              <h4>Go Hourly</h4>
             </div>
           </Grid>{" "}
           <Grid item xs={12} md={4}>
@@ -30,7 +30,9 @@ const HowWork = () => {
                 height={90}
                 objectFit="contain"
               />
-              <h3>Committed Development</h3>
+              <h4>
+                Committed <br /> Development
+              </h4>
             </div>
           </Grid>{" "}
           <Grid item xs={12} md={4}>
@@ -42,7 +44,7 @@ const HowWork = () => {
                 height={90}
                 objectFit="contain"
               />
-              <h3>Fixed Price</h3>
+              <h4>Fixed Price</h4>
             </div>
           </Grid>
         </Grid>
