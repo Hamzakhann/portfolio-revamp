@@ -73,6 +73,7 @@ h5 {
   font-weight: 600 !important;
   font-size: 18px !important;
   line-height: 1em !important;
+  margin: 0;
   font-family: "Inter", sans-serif !important;
 }
 
@@ -80,6 +81,7 @@ h6 {
   font-weight: 400 !important;
   font-size: 16px !important;
   line-height: 1em !important;
+  margin: 0;
   font-family: "Inter", sans-serif !important;
 }
 
@@ -91,5 +93,40 @@ p {
   margin: 0;
   @media only screen and (max-width: 768px) {
     font-size: 14px !important;
+  }
+}
+
+a {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.certifications_container {
+  .rec-pagination {
+    padding-top: 2rem;
+    .rec-dot_active {
+      width: 100px !important;
+      height: 20px;
+      border-radius: 15px !important;
+    }
+    .rec-dot {
+      background: black;
+      box-shadow: none;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile_none {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .desktop_none {
+    display: none !important;
   }
 }

@@ -1,0 +1,102 @@
+.skills_container {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 2rem;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 221, 103, 0.13) 0%,
+    rgba(103, 234, 132, 0.1) 51.04%,
+    rgba(255, 0, 107, 0) 100%
+  );
+  h2 {
+    margin-bottom: 4rem;
+  }
+  .skills_tab_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    .active {
+      border-bottom: 3px solid #daa520;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-weight: bolder !important;
+    }
+    h4 {
+      color: #000000;
+      cursor: pointer;
+      font-weight: 600 !important;
+    }
+  }
+  .skills_overview_container {
+    width: 100%;
+    height: 100%;
+    min-height: 50vh;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    .line_container {
+      width: 6px;
+      height: 50px;
+      min-height: 45vh;
+      background-color: black;
+    }
+    .skills_img_container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+      flex-wrap: wrap;
+    }
+    .skills_content_container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      flex-direction: column;
+      p {
+        color: black;
+        line-height: 150% !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skills_container {
+    padding: 2rem 1rem;
+    h2 {
+      margin-bottom: 2rem;
+    }
+    .skills_tab_container {
+      gap: 2rem;
+    }
+    .skills_overview_container {
+      flex-direction: column;
+      padding-top: 2rem;
+      gap: 1rem;
+      .skills_img_container {
+        justify-content: center;
+        gap: 3rem;
+        img {
+          max-width: 110px !important;
+        }
+      }
+      .line_container {
+        display: none;
+      }
+      .skills_content_container {
+        gap: 1rem;
+        p {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
