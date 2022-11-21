@@ -1,4 +1,3 @@
-import { Grid } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import styles from "./TrustedCompanies.module.scss";
@@ -14,8 +13,8 @@ const TrustedCompanies = () => {
     "/Images/soprano.png",
     "/Images/damedesh.png",
     "/Images/sunny_leone.png",
-    "/Images/right_bound.png",
     "/Images/valoha.png",
+    "/Images/rightbond.svg",
   ];
   return (
     <div className={styles.trusted_companies_container}>
