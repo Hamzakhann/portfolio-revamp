@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Typography } from "@mui/material";
 import Layout from "../layout/layout";
 import HeroHeader from "../components/HeroHeader/HeroHeader";
 import TrustedCompanies from "../components/TrustedCompanies/TrustedCompanies";
@@ -15,7 +14,6 @@ import Portfolio from "../components/Portfolio/Portfolio";
 import Certifications from "../components/Certifications/Certifications";
 import Footer from "../components/Footer/Footer";
 import SocialMedia from "../components/SocialMedia/SocialMedia";
-import { sortedUniq, sortedUniqBy } from "lodash";
 
 const Home = () => {
   // let [dummyData, setDummyData] = useState([

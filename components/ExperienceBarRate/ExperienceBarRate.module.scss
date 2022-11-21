@@ -55,3 +55,10 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .experience_container {
+    padding: 2rem 1rem;
+    min-height: 100%;
+  }
+}

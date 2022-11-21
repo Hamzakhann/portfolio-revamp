@@ -13,42 +13,37 @@ const Portfolio = () => {
   let [portfolios, setPortfolios] = useState([
     {
       title: "ALPHA PLUS EDUCATIONAL SYSTEM",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit
-      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum.`,
+      description: `Alpha Plus uses research-based methods to help schools improve performance of every child with curriculum, assessments and data aligned solely to the Oklahoma Academic Standards.Teachers and administrators learn to use data in making decisions that improve instruction and student performance.`,
       img: "/Images/portfolio_1.png",
     },
     {
       title: "RIGHT BOUND REPORTING MODULE",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit
-      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum.`,
+      description: `We’ve built a global, distributed team from day one, joining self-starting individuals from different backgrounds to build an extraordinary product and a customer-first company.`,
       img: "/Images/portfolio_2.png",
     },
     {
       title: "PALMETTO PARK",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit
-      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum.`,
+      description: `Palmetto Park Realty was born out of necessity. We wanted to build a local boutique real estate brokerage that could harness technology to deliver a localized experience better than the big national portals can. Our site is 100% custom built with the real estate search needs of South Carolina in mind. Check out our Lake House guides for an example of how we are different.`,
       img: "/Images/portfolio_3.png",
     },
     {
       title: "VOLT",
+      description: `We don’t try to be everything to everyone – we focus on what we do well and strive to do it better than anyone else. You can count on us to listen so that we understand your business, to be responsive to your requirements and timeframes, to be consultative in determining the best solution, and to be diligent in making sure your business has the people and processes it needs to succeed.
+      `,
+      img: "/Images/portfolio_4.png",
+    },
+    {
+      title: "INURGI",
+      description: `Sustainability is getting Inurgized: What we call it, how we talk about it, how we interact with it, how we make an impact and how it impacts us. We’re building a sustainability platform for everyone. Inclusive.  Accessible. Transparent.   Empowering.   `,
+      img: "/Images/portfolio_5.png",
+    },
+    {
+      title: "Ruvivo",
+      description: `By pairing your team with a team of dedicated recruiters and AI, Ruvivo quickly understands your preferences and recommends candidates specifically for you based on their qualifications, work history, and team culture fit.`,
+      img: "/Images/portfolio_6.png",
+    },
+    {
+      title: "Soprano",
       description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
       do eiusmod tempor incididunt ut labore et dolore magna
       aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -57,7 +52,106 @@ const Portfolio = () => {
       esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
       occaecat cupidatat non proident, sunt in culpa qui officia
       deserunt mollit anim id est laborum.`,
-      img: "/Images/portfolio_4.png",
+      img: "/Images/portfolio_7.png",
+    },
+    {
+      title: "Valohai",
+      description: `We know that machine learning will change the world. Since 2016, we’ve helped data science teams build, test and deploy deep learning models 10× faster, and make a dent in the universe with their work. Our mission is to free machine learning teams from repetitive, mundane tasks. We allow data scientists to concentrate on building models and benefiting humankind with their discoveries.`,
+      img: "/Images/portfolio_8.png",
+    },
+    {
+      title: "Damedash",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit
+      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum.`,
+      img: "/Images/portfolio_9.png",
+    },
+    {
+      title: "LUX RIDE",
+      description: `If you cannot find covers for your car or van on our site just now, please don’t worry. Fill our contact form and we will get back to you as soon as we can. We offer covers for most makes and models available on the UK market.      `,
+      img: "/Images/portfolio_10.png",
+    },
+    {
+      title: "ON CART",
+      description: `On-cart is the best online shopping platform in Zambia.We offer Cash on delivery & Free delivery
+      `,
+      img: "/Images/portfolio_11.png",
+    },
+    {
+      title: "RDI",
+      description: `Research and Development Initiative (RDI) is a non-profit, non-political & non-religious civil society organization. RDI is working in rural areas with the aim to empower the marginalized and vulnerable rural communities for sustainable development. The organization was established by young and energetic social activists who believed in values of transparency, accountability and Integrity. Through its innovative projects, RDI has been able to bring positive changes in community. RDI is registered under Societies Act 1860.      `,
+      img: "/Images/portfolio_12.png",
+    },
+    {
+      title: "APACE",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit
+      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum.`,
+      img: "/Images/portfolio_13.png",
+    },
+    {
+      title: "YZYTV",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit
+      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum.`,
+      img: "/Images/portfolio_14.png",
+    },
+    {
+      title: "HPS",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit
+      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum.`,
+      img: "/Images/portfolio_15.png",
+    },
+    {
+      title: "TIME BOOK",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit
+      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum.`,
+      img: "/Images/portfolio_16.png",
+    },
+    {
+      title: "URBAN",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit
+      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum.`,
+      img: "/Images/portfolio_17.png",
+    },
+    {
+      title: "CLUB PET",
+      description: `PET CLUB is a family owned, Bay Area based, Pet Supply Superstore chain with 11 Greater Bay Area Store Locations in CA. We offer a wide variety of Pet Food and Pet Supplies and use our buying power to give you the lowest price possible. WHY PAY MORE !! Come shop and compare to start saving $$$
+      `,
+      img: "/Images/portfolio_18.png",
     },
   ]);
   const handleSlide = (func) => func();
@@ -96,7 +190,7 @@ const Portfolio = () => {
                     src={item?.img}
                     alt="Portfolio Image"
                     width={300}
-                    height={400}
+                    height={250}
                     objectFit="contain"
                   />
                 </div>
