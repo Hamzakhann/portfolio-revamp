@@ -16,7 +16,6 @@ const Certifications = () => {
             .map((item, i) => (
               <div className={styles.slide} key={i}>
                 <Image
-                  key={i}
                   src="/Images/certificates_1.png"
                   alt="certificates"
                   width={700}
@@ -24,7 +23,6 @@ const Certifications = () => {
                   objectFit="contain"
                 />
                 <Image
-                  key={i}
                   src="/Images/certificates_1.png"
                   alt="certificates"
                   width={700}
@@ -42,7 +40,6 @@ const Certifications = () => {
             .map((item, i) => (
               <div className={styles.slide} key={i}>
                 <Image
-                  key={i}
                   src="/Images/certificates_1.png"
                   alt="certificates"
                   width={700}

@@ -28,15 +28,16 @@ const TrustedCompanies = () => {
         >
           {trustedImages.map((item, i) => (
             // <div className={styles.trusted_logos}>
-            <Image
-              src={item}
-              alt="Trusted Companies Logo"
-              width={90}
-              height={90}
-              objectFit="contain"
-              key={i}
-            />
-            // </div>
+            <div key={i}>
+              <Image
+                src={item}
+                alt="Trusted Companies Logo"
+                width={90}
+                height={90}
+                objectFit="contain"
+                key={i}
+              />
+            </div>
           ))}
         </Marquee>
       </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Typography } from "@mui/material";
 import Layout from "../layout/layout";
 import HeroHeader from "../components/HeroHeader/HeroHeader";
@@ -15,8 +15,39 @@ import Portfolio from "../components/Portfolio/Portfolio";
 import Certifications from "../components/Certifications/Certifications";
 import Footer from "../components/Footer/Footer";
 import SocialMedia from "../components/SocialMedia/SocialMedia";
+import { sortedUniq, sortedUniqBy } from "lodash";
 
 const Home = () => {
+  // let [dummyData, setDummyData] = useState([
+  //   {
+  //     name: "hello5",
+  //     priority: 5,
+  //   },
+  //   {
+  //     name: "hello2",
+  //     priority: 2,
+  //   },
+  //   {
+  //     name: "hello1",
+  //     priority: 1,
+  //   },
+  //   {
+  //     name: "hello3",
+  //     priority: 3,
+  //   },
+  //   {
+  //     name: "hello4",
+  //     priority: 4,
+  //   },
+  // ]);
+
+  // const handleFormatArrayByKey = (arr) =>
+  //   arr?.sort(function (a, b) {
+  //     return a.priority - b.priority;
+  //   });
+
+  // console.log(handleFormatArrayByKey(dummyData));
+
   return (
     <Layout>
       <HeroHeader />

@@ -119,6 +119,17 @@ a {
   }
 }
 
+.testimonials_container {
+  .rec-pagination {
+    .rec-dot {
+      background: black;
+      box-shadow: none;
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .mobile_none {
     display: none !important;
