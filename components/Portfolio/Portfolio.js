@@ -186,13 +186,7 @@ const Portfolio = () => {
             >
               <Grid item xs={12} md={12} lg={5}>
                 <div className={styles.slider_img_container}>
-                  <Image
-                    src={item?.img}
-                    alt="Portfolio Image"
-                    width={300}
-                    height={250}
-                    objectFit="contain"
-                  />
+                  <img src={item?.img} alt="Portfolio Image" />
                 </div>
               </Grid>
               <Grid item xs={12} md={12} lg={7}>

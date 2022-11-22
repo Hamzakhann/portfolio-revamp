@@ -122,12 +122,19 @@ a {
 .testimonials_container {
   .rec-pagination {
     .rec-dot {
-      background: black;
+      background: rgb(166, 165, 165);
       box-shadow: none;
       width: 10px;
       height: 10px;
     }
+    .rec-dot_active {
+      background: black;
+    }
   }
+}
+
+.rec-item-wrapper {
+  height: 100% !important;
 }
 
 @media only screen and (max-width: 768px) {
