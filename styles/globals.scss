@@ -133,8 +133,10 @@ a {
   }
 }
 
-.rec-item-wrapper {
-  height: 100% !important;
+.portfolio_container {
+  .rec-item-wrapper {
+    height: 100% !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {

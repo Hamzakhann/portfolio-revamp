@@ -1,5 +1,4 @@
 import { Grid } from "@mui/material";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useRef, useState } from "react";
 import { PrimaryButton } from "../Button/Button";
@@ -160,7 +159,7 @@ const Portfolio = () => {
     setTimeout(() => slideRef?.current?.goTo(val), time);
 
   return (
-    <div className={styles.portfolio_container}>
+    <div className={`${styles.portfolio_container} portfolio_container`}>
       <h2>Portfolio</h2>
       <div className={styles.portfolio_slider_container}>
         <div
