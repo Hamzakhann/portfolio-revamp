@@ -21,7 +21,6 @@ const Navbar = () => {
         <Typography variant="body1">About</Typography>
         <Typography variant="body1">Services</Typography>
         <Typography variant="body1">Portfolio</Typography>
-        <Typography variant="body1">News</Typography>
         <PrimaryButton>Contact Me</PrimaryButton>
       </div>
     </div>

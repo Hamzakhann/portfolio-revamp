@@ -20,24 +20,28 @@ const ChooseMe = () => {
       >
         <Grid item xs={12} md={12} lg={7}>
           <div className={styles.choose_me_content_container}>
-            <h2>WHY CHOOSE ME</h2>
+            <h2>MY BELIEVE</h2>
             <p>
-              Because we are a highly skilled team of creative geniuses who are
-              passionate about their work and our developers are expert
-              professionals in a range of new and existing platforms. We can
-              design web, desktop, and mobile applications using any technology.{" "}
+              I believe in teamwork. I believe a group of people who work
+              together can accomplish really big goals. When people work
+              together and encourage each other great things happen.
             </p>
             <p>
-              Trust us to design solutions that combine a solid technical
-              background with a user-friendly and contemporary interface.
+              Working in teams increases collaboration and allows brainstorming.
+              As a result, more ideas are developed and productivity improves.
+              Two or more people are always better than one for solving
+              problems, finishing off difficult tasks and increasing creativity.
             </p>
-            <p>
-              Trust us to design solutions that combine a solid technical
-              background with a user-friendly and contemporary interface.
-            </p>
+            <p>Let’s connect with me so we can do something big:)</p>
             <div className={styles.btn_container}>
               <PrimaryButton>Let's Collaborate</PrimaryButton>
-              <SecondaryButton>Connect on Whatsapp</SecondaryButton>
+
+              <a
+                href="https://api.whatsapp.com/send?phone=03412682080&data=AWChgJKccET8azlQmrIfAyrt3-C-tSqxtdbBeiGuYTIks80X9COd6qE0-nVdEgdULCHR1FXv6AY5IV8vYxZCiTrff5WcxILJMepsRv8xuKs4GmNxZ_kDA6jdoXtk7KfK7RVFqP-wd3uWzhohdKbAmO6aPPtAEd-TaJu5hdaCcz9IQyIOApl0FBjZj2qNk3JHhKja9oU0r0VKGPoZyr1HftDAGoc2oOgS42rFg7NfhrmPWIJNvXeT7O7YoVqpqW2h9qAjRfHia3wjoxczpyxuL8SpID3iQR6RqU0MVxVLkwvtKNPNlUziJbthcxEG-Urt2s8"
+                target="_blank"
+              >
+                <SecondaryButton>Connect on Whatsapp</SecondaryButton>
+              </a>
             </div>
           </div>
         </Grid>

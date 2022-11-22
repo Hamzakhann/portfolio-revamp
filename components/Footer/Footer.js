@@ -23,10 +23,8 @@ const Footer = () => {
           <div className={styles.links_container}>
             <p>Home</p>
             <p>About</p>
-            <p>Service</p>
+            <p>Services</p>
             <p>Portfolio</p>
-            <p>Team</p>
-            <p>Career</p>
             <p>Contact us</p>
           </div>
         </Grid>

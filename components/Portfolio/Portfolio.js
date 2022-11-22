@@ -43,14 +43,7 @@ const Portfolio = () => {
     },
     {
       title: "Soprano",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit
-      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum.`,
+      description: `Soprano is a platform that connects you directly with your fanbase, you can scale thousands of fans to make your brand millions of dollars and be more engaged with your brand than ever before`,
       img: "/Images/portfolio_7.png",
     },
     {
@@ -60,14 +53,7 @@ const Portfolio = () => {
     },
     {
       title: "Damedash",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit
-      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum.`,
+      description: `OTT Platform Where You can find Exclusive content! Music, interviews, live performances, cooking, yoga, and therapy...entertaining and much more! All with our point of view. Committed to evolving the culture, self-awareness, healthy living, independence, and learning from our experience. Evolve with us!   `,
       img: "/Images/portfolio_9.png",
     },
     {
@@ -88,62 +74,28 @@ const Portfolio = () => {
     },
     {
       title: "APACE",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit
-      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum.`,
+      description: `Apace providing your customer’s with an opportunity to get a refund and Payment Immediately and Instantly in real time at beginning or mid point or return process you’re ensuring a satisfied and happy returning customer`,
       img: "/Images/portfolio_13.png",
     },
     {
       title: "YZYTV",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit
-      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum.`,
+      description: `OTT Platform`,
       img: "/Images/portfolio_14.png",
     },
     {
       title: "HPS",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit
-      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum.`,
+      description: `No more pen and paper
+      sign-in sheets for attendance.  There's a better way! Give your parents the Best Experience. `,
       img: "/Images/portfolio_15.png",
     },
     {
       title: "TIME BOOK",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit
-      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum.`,
+      description: ``,
       img: "/Images/portfolio_16.png",
     },
     {
       title: "URBAN",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-      do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit
-      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum.`,
+      description: ``,
       img: "/Images/portfolio_17.png",
     },
     {
@@ -192,10 +144,10 @@ const Portfolio = () => {
                 <div className={styles.slider_content_container}>
                   <h3>{item?.title}</h3>
                   <p>{item?.description}</p>
-                  <div className={styles.slider_links_container}>
+                  {/* <div className={styles.slider_links_container}>
                     <Link href={"#"}>Android Versions</Link>
                     <Link href={"#"}>IOS Versions</Link>
-                  </div>
+                  </div> */}
                 </div>
               </Grid>
             </Grid>

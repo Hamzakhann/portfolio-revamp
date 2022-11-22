@@ -39,17 +39,25 @@ const HeroHeader = () => {
                 <div className={styles.tag_line}></div>
               </div>
               <Typography variant="h4">
-                I am a passionate Full stack developer with more than 4 years
-                experience working for many companies and startups, I love to
-                create applications around web and mobile with neat and clean
-                code using best practices , test driven approach , latest trends
-                in technology and using scalable architecture.
+                ✨ I am a modern full-stack cloud developer and architect with
+                more than 4 years of experience in developing dynamic
+                applications using MERN Stack , MEVN Stack and static content
+                with JAMstack. I love to create applications around web and
+                mobile with neat and clean code using best practices , test
+                driven approach , latest trends in technology and using scalable
+                architecture.
               </Typography>
               <Typography variant="h4">
-                Launched multiple projects with different teams. I am always
+                ✨I have worked with multiple startups and companies like PIAIC,
+                Rightbound , HolonIQ , Valohai , Dame Dash Studios , Soprano ,
+                Mintdropz , Ruvivo , Misfitz By Sunny Leone , Go Ubiq on Upwork
+                and Freelancer.
+              </Typography>
+              <Typography variant="h4">
+                ✨Launched multiple projects with different teams. I am always
                 ready for new challanges. I transform Ideas into products.
                 Customer Satisfaction is my foremost duty because I believe in
-                long term relationships.
+                long term relationships.{" "}
               </Typography>
               <div className={styles.btn_container}>
                 <PrimaryButton>Lets Collaborate</PrimaryButton>
