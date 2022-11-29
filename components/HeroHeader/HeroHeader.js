@@ -60,7 +60,9 @@ const HeroHeader = () => {
                 long term relationships.{" "}
               </Typography>
               <div className={styles.btn_container}>
-                <PrimaryButton>Lets Collaborate</PrimaryButton>
+                <a href="/Resume.pdf" download="file">
+                  <PrimaryButton>Lets Collaborate</PrimaryButton>
+                </a>
                 <SecondaryButton>Download Resume</SecondaryButton>
               </div>
             </div>

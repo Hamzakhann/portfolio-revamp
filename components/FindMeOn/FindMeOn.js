@@ -17,7 +17,7 @@ const FindMeOn = () => {
           <Grid item xs={12} md={4}>
             <div className={styles.find}>
               {redirectByATag(
-                "https://www.upwork.com/freelancers/~013cc8fc4b38ab9cb2",
+                "https://www.fiverr.com/gottlich_return",
                 <Image
                   src="/Images/fiverr.png"
                   alt="upwork image"
@@ -31,7 +31,7 @@ const FindMeOn = () => {
           <Grid item xs={12} md={4}>
             <div className={styles.find}>
               {redirectByATag(
-                "https://www.fiverr.com/gottlich_return",
+                "https://www.freelancer.com/u/mhamzakhann66",
                 <Image
                   src="/Images/freelancer.png"
                   alt="upwork image"
@@ -45,7 +45,7 @@ const FindMeOn = () => {
           <Grid item xs={12} md={4}>
             <div className={styles.find}>
               {redirectByATag(
-                "https://www.freelancer.com/u/mhamzakhann66",
+                "https://www.upwork.com/freelancers/~013cc8fc4b38ab9cb2",
                 <Image
                   src="/Images/upwork.png"
                   alt="upwork image"

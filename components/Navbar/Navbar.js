@@ -1,10 +1,20 @@
 import { Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Navbar.module.scss";
 import { PrimaryButton } from "../Button/Button";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  let router = useRouter();
+  const handleLinkActive = (val) => {
+    // let { asPath } = router;
+    // let measureVal = asPath?.split("/")[1];
+    // console.log(measureVal === `#${val}`);
+    // if (measureVal === `#${val}`) return styles.active_link;
+    // return;
+    if (val === "/") return styles.active_link;
+  };
   return (
     <div className={styles.navbar_container}>
       <div className={styles.navbar_img_container}>
@@ -17,10 +27,18 @@ const Navbar = () => {
         />
       </div>
       <div className={styles.navbar_links_container}>
-        <Typography variant="body1">Home</Typography>
-        <Typography variant="body1">About</Typography>
-        <Typography variant="body1">Services</Typography>
-        <Typography variant="body1">Portfolio</Typography>
+        <Typography variant="body1" className={handleLinkActive("/")}>
+          Home
+        </Typography>
+        <Typography variant="body1" className={handleLinkActive("about")}>
+          About
+        </Typography>
+        <Typography variant="body1" className={handleLinkActive("services")}>
+          Services
+        </Typography>
+        <Typography variant="body1" className={handleLinkActive("portfolio")}>
+          Portfolio
+        </Typography>
         <PrimaryButton>Contact Me</PrimaryButton>
       </div>
     </div>

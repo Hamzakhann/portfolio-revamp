@@ -12,50 +12,50 @@ const Testimonials = () => {
       locations: "USA",
       description: `"Hamza delivered an outstanding work in the super short delay we had set. He is serious, super effective and really kind. You can trust him all the way.
       Thank you again Hamza, we will work with you again! ;)"`,
-      img: "/Images/testimonials_5.jpg",
+      img: "/Images/kevin.jpeg",
     },
     {
       title: "Majdolin",
       locations: "ISRAEL",
       description: `"Hamza professional experience helped me to solve a problem that I have stuck with for two weeks,He also helped solve other related problems,His communication level and skills are great! ,I without a doubt Will order again"`,
-      img: "/Images/testimonials_5.jpg",
+      img: "/Images/majdoline.jpeg",
     },
     {
       title: "Ryan kumar",
       locations: "USA",
       description: `"Hamza is a hard working, dedicated part of the team. He's talented within the front end domain and would recommend to others""`,
-      img: "/Images/testimonials_5.jpg",
+      img: "/Images/ryan.jpeg",
     },
     {
       title: "Bernard",
       locations: "USA",
       description: `"Hamza did a great job with understanding my needs. His skills in PWA development are superb. He did the requested updates in timely manner and gave me advice for future updates on my PWA. Will definitely use his services again."`,
-      img: "/Images/testimonials_5.jpg",
+      img: "/Images/bernard.jpeg",
     },
     {
       title: "Anthony",
       locations: "Australia",
       description: `"Hamza is an expert with MERN stacks. He works efficiently and finds issues that may arise before they happen and corrects them accordingly. It was a pleasure to work with him."`,
-      img: "/Images/testimonials_5.jpg",
+      img: "/Images/anthony.jpeg",
     },
     {
       title: "Jayanth",
       locations: "USA",
       description: `"Hamza is a fantastic developer! Did everything we asked for and more. Didn't require a lot of instruction, was able to understand our requirements and did a great job. Really happy with the work so far. Will definitely rehire."`,
-      img: "/Images/testimonials_5.jpg",
+      img: "/Images/jayanth.jpeg",
     },
     {
       title: "Rotem Dofni",
       locations: "ISRAEL",
       description: `"Hamza did a great job working on our reporting module.
       He was very responsive, cooperative, and finished tasks on time and professionally."`,
-      img: "/Images/testimonials_5.jpg",
+      img: "/Images/rotem.jpeg",
     },
     {
       title: "Don Bandy",
       locations: "USA",
       description: `"Hamza and I developed a great friendship on this project and I enjoyed working him. He was always willing to jump in and help at any time. Really awesome person to have on the team. Thank you for everything you’ve done Hamza."`,
-      img: "/Images/testimonials_5.jpg",
+      img: "/Images/don.jpeg",
     },
   ]);
 
