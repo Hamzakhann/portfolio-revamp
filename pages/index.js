@@ -14,6 +14,7 @@ import Portfolio from "../components/Portfolio/Portfolio";
 import Certifications from "../components/Certifications/Certifications";
 import Footer from "../components/Footer/Footer";
 import SocialMedia from "../components/SocialMedia/SocialMedia";
+import GetInTouch from "../components/GetInTouch/GetInTouch";
 
 const Home = () => {
   // let [dummyData, setDummyData] = useState([
@@ -60,6 +61,7 @@ const Home = () => {
       <Skills />
       <Portfolio />
       <Certifications />
+      <GetInTouch />
       <SocialMedia />
       <Footer />
     </Layout>

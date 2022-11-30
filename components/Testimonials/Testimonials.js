@@ -92,8 +92,8 @@ const Testimonials = () => {
                   <Image
                     src={item?.img}
                     alt="logo"
-                    width={200}
-                    height={200}
+                    width={130}
+                    height={130}
                     objectFit="contain"
                   />
                 </div>
