@@ -88,13 +88,15 @@ const Testimonials = () => {
           >
             {testimonials?.map((item, i) => (
               <div className={styles.testimonials_content_container} key={i}>
-                <Image
-                  src={item?.img}
-                  alt="logo"
-                  width={200}
-                  height={200}
-                  objectFit="contain"
-                />
+                <div className={styles.testi_img_container}>
+                  <Image
+                    src={item?.img}
+                    alt="logo"
+                    width={200}
+                    height={200}
+                    objectFit="contain"
+                  />
+                </div>
                 <h3>{item?.title}</h3>
                 <h4>{item?.locations}</h4>
                 <p>{item?.description}</p>

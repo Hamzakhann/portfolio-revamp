@@ -6,7 +6,7 @@ import styles from "./ChooseMe.module.scss";
 
 const ChooseMe = () => {
   return (
-    <div className={styles.why_choose_me_container}>
+    <div className={styles.why_choose_me_container} id="about">
       <Grid
         container
         spacing={5}

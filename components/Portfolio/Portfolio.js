@@ -111,7 +111,10 @@ const Portfolio = () => {
     setTimeout(() => slideRef?.current?.goTo(val), time);
 
   return (
-    <div className={`${styles.portfolio_container} portfolio_container`}>
+    <div
+      className={`${styles.portfolio_container} portfolio_container`}
+      id="portfolio"
+    >
       <h2>Portfolio</h2>
       <div className={styles.portfolio_slider_container}>
         <div

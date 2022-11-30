@@ -27,18 +27,26 @@ const Navbar = () => {
         />
       </div>
       <div className={styles.navbar_links_container}>
-        <Typography variant="body1" className={handleLinkActive("/")}>
-          Home
-        </Typography>
-        <Typography variant="body1" className={handleLinkActive("about")}>
-          About
-        </Typography>
-        <Typography variant="body1" className={handleLinkActive("services")}>
-          Services
-        </Typography>
-        <Typography variant="body1" className={handleLinkActive("portfolio")}>
-          Portfolio
-        </Typography>
+        <a href="#home">
+          <Typography variant="body1" className={handleLinkActive("/")}>
+            Home
+          </Typography>
+        </a>
+        <a href="#about">
+          <Typography variant="body1" className={handleLinkActive("about")}>
+            About
+          </Typography>
+        </a>
+        <a href="#services">
+          <Typography variant="body1" className={handleLinkActive("services")}>
+            Services
+          </Typography>
+        </a>
+        <a href="#portfolio">
+          <Typography variant="body1" className={handleLinkActive("portfolio")}>
+            Portfolio
+          </Typography>
+        </a>
         <PrimaryButton>Contact Me</PrimaryButton>
       </div>
     </div>

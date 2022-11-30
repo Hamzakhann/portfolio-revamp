@@ -6,7 +6,7 @@ import styles from "./HeroHeader.module.scss";
 
 const HeroHeader = () => {
   return (
-    <div className={styles.hero_header_container}>
+    <div className={styles.hero_header_container} id="home">
       <div className={styles.image_underLay}></div>
       <div className={styles.hero_header}>
         <Grid
