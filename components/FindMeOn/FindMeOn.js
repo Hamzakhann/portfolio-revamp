@@ -10,7 +10,7 @@ const FindMeOn = () => {
     </a>
   );
   return (
-    <div className={styles.find_me_container} id="services">
+    <div className={styles.find_me_container}>
       <h2>FIND ME ON</h2>
       <div className={styles.find_links_container}>
         <Grid container spacing={4}>

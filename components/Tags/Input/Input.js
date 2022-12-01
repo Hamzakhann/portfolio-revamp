@@ -1,7 +1,15 @@
 import React from "react";
 import styles from "./Input.module.scss";
 
-const Input = ({ type, placeholder, onChange, value, style, inputType }) => {
+const Input = ({
+  type,
+  placeholder,
+  onChange,
+  value,
+  style,
+  inputType,
+  maxLength,
+}) => {
   return (
     <div className={styles.input_container}>
       <input
@@ -11,6 +19,7 @@ const Input = ({ type, placeholder, onChange, value, style, inputType }) => {
         value={value}
         style={style}
         className={`${inputType === "outlined" && styles.outlined}`}
+        maxLength={maxLength}
       />
     </div>
   );

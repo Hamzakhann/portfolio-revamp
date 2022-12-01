@@ -10,7 +10,7 @@ const Skills = () => {
   const changeTab = (val) => setTabs(val);
 
   return (
-    <div className={styles.skills_container}>
+    <div className={styles.skills_container} id="services">
       <h2>Skills</h2>
       <div className={styles.skills_tab_container}>
         <h4
