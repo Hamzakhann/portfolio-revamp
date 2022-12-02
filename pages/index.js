@@ -15,6 +15,7 @@ import Certifications from "../components/Certifications/Certifications";
 import Footer from "../components/Footer/Footer";
 import SocialMedia from "../components/SocialMedia/SocialMedia";
 import GetInTouch from "../components/GetInTouch/GetInTouch";
+import AllSkills from "../components/AllSkills/AllSkills";
 
 const Home = () => {
   // let [dummyData, setDummyData] = useState([
@@ -58,6 +59,7 @@ const Home = () => {
       <Academics />
       <HowWork />
       <Testimonials />
+      <AllSkills />
       <Skills />
       <Portfolio />
       <Certifications />
