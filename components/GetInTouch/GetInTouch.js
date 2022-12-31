@@ -11,10 +11,11 @@ const GetInTouch = () => {
     name: "",
     number: "",
     email: "",
-    message: "",
+    message: ""
   });
   const [isLoading, setIsLoading] = useState(false);
   const [clientErr, setClientErr] = useState({});
+
   const validatingBody = (body) => {
     if (!formData?.name) clientErr.name = true;
     else if (!formData?.number) clientErr.number = true;
@@ -36,26 +37,27 @@ const GetInTouch = () => {
       console.log(error);
     }
   };
+
+
   return (
-    <div className={styles.get_in_container}>
+    <div className={styles.get_in_container} id="contact-form" >
       <div className={styles.inner_container}>
         <Grid container spacing={5}>
-          <Grid item xs={12} md={12} lg={6}>
+          <Grid item xs={12} md={6} lg={6}>
             <div className={styles.get_in_content_container}>
-              <h2>Get in touch with me</h2>
-              <h3>Address</h3>
-              <p>A-17 ROW-2, BlOCk 10-A, GULSHAN-E-IQBAL, Karachi 75290</p>
-              <p>+92 331 2524 40090</p>
-              <p>info@hamzakhann.com</p>
+              <h2>Get in touch</h2>
+              <p><b>ADDRESS:</b> A-17 ROW-2, BlOCk 10-A, GULSHAN-E-IQBAL, Karachi 75290</p>
+              <p><b>Ph#:</b> +92331-2524490</p>
+              <p><b>Email:</b> hamzakhann66@gmail.com</p>
             </div>
           </Grid>
-          <Grid item xs={12} md={12} lg={6}>
+          <Grid item xs={12} md={6} lg={6}>
             <div className={styles.get_in_form_container}>
-              <h5>
+              {/* <h5>
                 Thank you for contacting me for your next project. Just fill in
                 the form below with basic details and Our representative will
                 get back to you shortly
-              </h5>
+              </h5> */}
               <Input
                 inputType="outlined"
                 type="text"

@@ -23,20 +23,20 @@ const Footer = () => {
           <div className={styles.links_container}>
             <p>Home</p>
             <p>About</p>
-            <p>Services</p>
+            {/* <p>Services</p> */}
             <p>Portfolio</p>
             <p>Contact us</p>
           </div>
         </Grid>
         <Grid item xs={12} md={12} lg={3}>
           <div className={styles.agreement_container}>
-            <Link href="#">Terms & Conditions</Link>
-            <Link href="#">Privacy Policy</Link>
+            {/* <Link href="#">Terms & Conditions</Link>
+            <Link href="#">Privacy Policy</Link> */}
           </div>
         </Grid>
       </Grid>
       <p className={styles.footerLine}>
-        @ 2022 Hamza khann. All rights reserved
+        @ 2022 Hamza Khan. All rights reserved
       </p>
     </div>
   );

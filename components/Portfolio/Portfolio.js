@@ -1,5 +1,6 @@
 import { Grid } from "@mui/material";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useRef, useState } from "react";
 import { PrimaryButton } from "../Button/Button";
 import styles from "./Portfolio.module.scss";
@@ -88,16 +89,16 @@ const Portfolio = () => {
       sign-in sheets for attendance.  There's a better way! Give your parents the Best Experience. `,
       img: "/Images/portfolio_15.png",
     },
-    {
-      title: "TIME BOOK",
-      description: ``,
-      img: "/Images/portfolio_16.png",
-    },
-    {
-      title: "URBAN",
-      description: ``,
-      img: "/Images/portfolio_17.png",
-    },
+    // {
+    //   title: "TIME BOOK",
+    //   description: ``,
+    //   img: "/Images/portfolio_16.png",
+    // },
+    // {
+    //   title: "URBAN",
+    //   description: ``,
+    //   img: "/Images/portfolio_17.png",
+    // },
     {
       title: "CLUB PET",
       description: `PET CLUB is a family owned, Bay Area based, Pet Supply Superstore chain with 11 Greater Bay Area Store Locations in CA. We offer a wide variety of Pet Food and Pet Supplies and use our buying power to give you the lowest price possible. WHY PAY MORE !! Come shop and compare to start saving $$$
@@ -133,17 +134,17 @@ const Portfolio = () => {
         >
           {portfolios?.map((item, i) => (
             <Grid
-              key={item?.title}
+              key={i}
               container
               spacing={4}
               className={styles.grid_container}
             >
-              <Grid item xs={12} md={12} lg={5}>
+              <Grid item xs={12} md={7} lg={7}>
                 <div className={styles.slider_img_container}>
-                  <img src={item?.img} alt="Portfolio Image" />
+                  <Image src={item?.img} alt="Portfolio Image" layout="fill" />
                 </div>
               </Grid>
-              <Grid item xs={12} md={12} lg={7}>
+              <Grid item xs={12} md={5} lg={5}>
                 <div className={styles.slider_content_container}>
                   <h3>{item?.title}</h3>
                   <p>{item?.description}</p>
@@ -164,7 +165,9 @@ const Portfolio = () => {
         </div>
       </div>
       <div className={styles.btn_container}>
-        <PrimaryButton>Let's Collaborate</PrimaryButton>
+      <Link href="/#contact-form" passHref>
+        <PrimaryButton>Let&apos;s Collaborate</PrimaryButton>
+        </Link>
       </div>
     </div>
   );

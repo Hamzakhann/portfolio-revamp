@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Layout from "../layout/layout";
 import HeroHeader from "../components/HeroHeader/HeroHeader";
 import TrustedCompanies from "../components/TrustedCompanies/TrustedCompanies";
@@ -18,54 +18,27 @@ import GetInTouch from "../components/GetInTouch/GetInTouch";
 import AllSkills from "../components/AllSkills/AllSkills";
 
 const Home = () => {
-  // let [dummyData, setDummyData] = useState([
-  //   {
-  //     name: "hello5",
-  //     priority: 5,
-  //   },
-  //   {
-  //     name: "hello2",
-  //     priority: 2,
-  //   },
-  //   {
-  //     name: "hello1",
-  //     priority: 1,
-  //   },
-  //   {
-  //     name: "hello3",
-  //     priority: 3,
-  //   },
-  //   {
-  //     name: "hello4",
-  //     priority: 4,
-  //   },
-  // ]);
-
-  // const handleFormatArrayByKey = (arr) =>
-  //   arr?.sort(function (a, b) {
-  //     return a.priority - b.priority;
-  //   });
-
-  // console.log(handleFormatArrayByKey(dummyData));
-
   return (
     <Layout>
       <HeroHeader />
       <TrustedCompanies />
       <ChooseMe />
+      <Portfolio />
       <ExperienceBarRate />
-      <Experience />
-      <FindMeOn />
       <Academics />
+
       <HowWork />
+      <Experience />
+
       <Testimonials />
       <AllSkills />
-      <Skills />
-      <Portfolio />
+
       <Certifications />
       <GetInTouch />
       <SocialMedia />
       <Footer />
+      {/* <FindMeOn /> */}
+      {/* <Skills /> */}
     </Layout>
   );
 };

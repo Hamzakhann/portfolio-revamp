@@ -67,7 +67,7 @@ const NavSm = () => {
         <div className={styles.nav_links} ref={navLinksRef}>
           <p>Home</p>
           <p>About</p>
-          <p>Services</p>
+          {/* <p>Services</p> */}
           <p>Portfolio</p>
           <PrimaryButton>Contact Me</PrimaryButton>
         </div>

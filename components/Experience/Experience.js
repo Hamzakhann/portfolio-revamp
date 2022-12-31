@@ -43,7 +43,7 @@ const Experience = () => {
       company: "MINTDROPZ",
       date: "2020 - 2021",
       description:
-        "Build full stack applications for both web and mobile.Deliver clean, readable and efficient solutions following the best practices and standards.",
+        "Build full stack applications for web. Deliver clean, readable and efficient solutions following the best practices and standards.",
     },
     {
       img: "/Images/ruvivo.svg",
@@ -59,7 +59,7 @@ const Experience = () => {
       company: "HOLON-IQ",
       date: "2018 - 2019",
       description:
-        "Working on tables charts data modelling and APIs integration creating pages with latest frontend technology",
+        "Working on tables charts data modelling and APIs integration creating pages with latest frontend technologies",
     },
     {
       img: "/Images/panacloud.svg",

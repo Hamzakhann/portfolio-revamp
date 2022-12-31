@@ -1,5 +1,6 @@
 import { Grid } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { PrimaryButton, SecondaryButton } from "../Button/Button";
 import styles from "./ChooseMe.module.scss";
@@ -12,13 +13,12 @@ const ChooseMe = () => {
         spacing={5}
         sx={{
           flexDirection: {
-            md: "column-reverse",
+            md: "row",
             xs: "column-reverse",
-            lg: "row",
-          },
+          }
         }}
       >
-        <Grid item xs={12} md={12} lg={7}>
+        <Grid item xs={12} md={7} lg={7}>
           <div className={styles.choose_me_content_container}>
             <h2>MY BELIEVE</h2>
             <p>
@@ -34,20 +34,20 @@ const ChooseMe = () => {
             </p>
             <p>Let’s connect with me so we can do something big:)</p>
             <div className={styles.btn_container}>
-              <a href="/Resume.pdf" download="file">
-                <PrimaryButton>Let's Collaborate</PrimaryButton>
-              </a>
+              <Link href="/#contact-form" passHref>
+                <PrimaryButton>Let&apos;s Collaborate</PrimaryButton>
+              </Link>
 
-              <a
+              <Link
+                passHref
                 href="https://api.whatsapp.com/send?phone=03412682080&data=AWChgJKccET8azlQmrIfAyrt3-C-tSqxtdbBeiGuYTIks80X9COd6qE0-nVdEgdULCHR1FXv6AY5IV8vYxZCiTrff5WcxILJMepsRv8xuKs4GmNxZ_kDA6jdoXtk7KfK7RVFqP-wd3uWzhohdKbAmO6aPPtAEd-TaJu5hdaCcz9IQyIOApl0FBjZj2qNk3JHhKja9oU0r0VKGPoZyr1HftDAGoc2oOgS42rFg7NfhrmPWIJNvXeT7O7YoVqpqW2h9qAjRfHia3wjoxczpyxuL8SpID3iQR6RqU0MVxVLkwvtKNPNlUziJbthcxEG-Urt2s8"
-                target="_blank"
               >
                 <SecondaryButton>Connect on Whatsapp</SecondaryButton>
-              </a>
+              </Link>
             </div>
           </div>
         </Grid>
-        <Grid item xs={12} md={12} lg={5}>
+        <Grid item xs={12} md={5} lg={5}>
           <div className={styles.choose_me_img_container}>
             <Image
               src="/Images/believe_1.png"

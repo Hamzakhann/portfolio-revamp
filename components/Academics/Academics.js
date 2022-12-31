@@ -67,7 +67,7 @@ const Academics = () => {
                   Aligarh institute of technology pakistan
                 </Typography>
                 <Typography variant="body1">
-                  High School Diploma, Electrical and Electronics Engineering
+                  DAE (Electrical Engineering)
                 </Typography>
                 <small>2011 - 2014</small>
               </div>

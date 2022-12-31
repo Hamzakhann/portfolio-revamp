@@ -66,7 +66,7 @@ const Testimonials = () => {
       <h2>Testimonials</h2>
 
       <Grid container spacing={5}>
-        <Grid item xs={12} md={12} lg={6}>
+        <Grid item xs={12} md={6} lg={6}>
           <div className={styles.testimonials_img_container}>
             <Image
               src="/Images/testimonials_new_1.png"
@@ -77,7 +77,7 @@ const Testimonials = () => {
             />
           </div>
         </Grid>
-        <Grid item xs={12} md={12} lg={6}>
+        <Grid item xs={12} md={6} lg={6}>
           <Carousel
             ref={slideRef}
             showArrows={false}

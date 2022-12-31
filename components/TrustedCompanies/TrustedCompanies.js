@@ -18,7 +18,7 @@ const TrustedCompanies = () => {
   ];
   return (
     <div className={styles.trusted_companies_container}>
-      <h2>TRUSTED BY COMPANIES</h2>
+      <h2>WORKED WITH</h2>
       <div className={styles.trusted_content_container}>
         <Marquee
           gradientColor={[]}

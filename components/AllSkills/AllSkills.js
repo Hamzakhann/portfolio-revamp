@@ -70,7 +70,7 @@ const AllSkills = () => {
             objectFit="contain"
           />
         </div>
-        <div className={styles.all_skills}>
+        {/* <div className={styles.all_skills}>
           <Image
             src="/Images/python.png"
             alt="firebase js logo"
@@ -78,7 +78,7 @@ const AllSkills = () => {
             height={120}
             objectFit="contain"
           />
-        </div>
+        </div> */}
         <div className={styles.all_skills}>
           <Image
             src="/Images/apollo.png"

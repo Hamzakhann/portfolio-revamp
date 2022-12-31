@@ -46,7 +46,7 @@ const Navbar = () => {
             About
           </Typography>
         </a>
-        <a
+        {/* <a
           href="#services"
           onClick={() => {
             localStorage.setItem("activeLink", "#services");
@@ -56,7 +56,7 @@ const Navbar = () => {
           <Typography variant="body1" className={handleLinkActive("#services")}>
             Services
           </Typography>
-        </a>
+        </a> */}
         <a
           href="#portfolio"
           onClick={() => {
@@ -71,7 +71,11 @@ const Navbar = () => {
             Portfolio
           </Typography>
         </a>
+        <a
+          href="#contact-form"
+        >
         <PrimaryButton>Contact Me</PrimaryButton>
+        </a>
       </div>
     </div>
   );

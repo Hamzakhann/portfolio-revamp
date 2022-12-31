@@ -1,6 +1,7 @@
+import React from "react";
 import { Grid, Typography } from "@mui/material";
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
 import { PrimaryButton, SecondaryButton } from "../Button/Button";
 import styles from "./HeroHeader.module.scss";
 
@@ -13,61 +14,61 @@ const HeroHeader = () => {
           container
           sx={{
             flexDirection: {
-              md: "column-reverse",
+              md: "row",
               xs: "column-reverse",
-              lg: "row",
-            },
+            }
           }}
         >
-          <Grid item xs={12} md={12} lg={7}>
+          <Grid item xs={12} md={7} lg={7}>
             <div className={styles.hero_header_content_container}>
               <Typography variant="body1">
                 Make The Difference - Make The Way
               </Typography>
               <div className={styles.heading}>
-                <Typography variant="h1">Hamza Khan </Typography>
-                <Image
+                <Typography variant="h1">Hamza Khan 
+                {/* <Image
                   src="/Images/hero_2.png"
                   alt="hero hand image"
                   width={60}
                   height={60}
                   objectFit="contain"
-                />
+                /> */}
+                </Typography>
+
               </div>
               <div className={styles.tag_line_container}>
                 <Typography variant="h3">Full Stack Engineer</Typography>
                 <div className={styles.tag_line}></div>
               </div>
               <Typography variant="h4">
-                ✨ I am a modern full-stack cloud developer and architect with
-                more than 4 years of experience in developing dynamic
-                applications using MERN Stack , MEVN Stack and static content
-                with JAMstack. I love to create applications around web and
-                mobile with neat and clean code using best practices , test
-                driven approach , latest trends in technology and using scalable
-                architecture.
+                ✨ I am an expert <b>Full Stack</b> developer with more than 4
+                years of experience in developing dynamic applications using
+                MERN Stack , MEVN Stack and static content with JAM Stack. I
+                love to create applications around web and mobile with neat and
+                clean code using best practices , test driven approach , latest
+                trends in technology and using scalable architecture.
               </Typography>
               <Typography variant="h4">
                 ✨I have worked with multiple startups and companies like PIAIC,
                 Rightbound , HolonIQ , Valohai , Dame Dash Studios , Soprano ,
-                Mintdropz , Ruvivo , Misfitz By Sunny Leone , Go Ubiq on Upwork
-                and Freelancer.
+                Mintdropz , Ruvivo , Misfitz By Sunny Leone , Go Ubiq.
               </Typography>
               <Typography variant="h4">
                 ✨Launched multiple projects with different teams. I am always
                 ready for new challanges. I transform Ideas into products.
-                Customer Satisfaction is my foremost duty because I believe in
-                long term relationships.{" "}
+                Customer Satisfaction is my foremost duty.
               </Typography>
               <div className={styles.btn_container}>
-                <a href="/Resume.pdf" download="file">
+                <Link href="/#contact-form" passHref>
                   <PrimaryButton>Lets Collaborate</PrimaryButton>
+                </Link>
+                <a href="/Resume.pdf" download="resume">
+                  <SecondaryButton>Download Resume</SecondaryButton>
                 </a>
-                <SecondaryButton>Download Resume</SecondaryButton>
               </div>
             </div>
           </Grid>
-          <Grid item xs={12} md={12} lg={5}>
+          <Grid item xs={12} md={5} lg={5}>
             <div className={styles.hero_header_img_container}>
               <Image
                 src="/Images/hero_img.png"
