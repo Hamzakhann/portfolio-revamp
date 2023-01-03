@@ -71,10 +71,8 @@ const Navbar = () => {
             Portfolio
           </Typography>
         </a>
-        <a
-          href="#contact-form"
-        >
-        <PrimaryButton>Contact Me</PrimaryButton>
+        <a href="#contact-form">
+          <PrimaryButton>Contact Me</PrimaryButton>
         </a>
       </div>
     </div>

@@ -21,11 +21,19 @@ const Footer = () => {
         </Grid>
         <Grid item xs={12} md={12} lg={6}>
           <div className={styles.links_container}>
-            <p>Home</p>
-            <p>About</p>
+            <a href="#home">
+              <p>Home</p>
+            </a>
+            <a href="#about">
+              <p>About</p>
+            </a>
             {/* <p>Services</p> */}
-            <p>Portfolio</p>
-            <p>Contact us</p>
+            <a href="#portfolio">
+              <p>Portfolio</p>
+            </a>
+            <a href="#contact-form">
+              <p>Contact us</p>
+            </a>
           </div>
         </Grid>
         <Grid item xs={12} md={12} lg={3}>

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { SecondaryButton } from "../Button/Button";
 import Input from "../Tags/Input/Input";
 import Textarea from "../Tags/Textarea/Textarea";
+import validator from "validator";
 import styles from "./GetInTouch.module.scss";
 
 const GetInTouch = () => {
@@ -11,17 +12,42 @@ const GetInTouch = () => {
     name: "",
     number: "",
     email: "",
-    message: ""
+    message: "",
   });
   const [isLoading, setIsLoading] = useState(false);
   const [clientErr, setClientErr] = useState({});
 
   const validatingBody = (body) => {
-    if (!formData?.name) clientErr.name = true;
-    else if (!formData?.number) clientErr.number = true;
-    else if (!formData?.email) clientErr.email = true;
-    else if (!formData?.message) clientErr.message = true;
-    else handleSubmitForm();
+    let isErr = false;
+    let errors = {};
+    if (!validator.isEmail(body?.email)) {
+      isErr = true;
+      errors.email = "Email is invalid";
+    } else {
+      errors.email = "";
+    }
+    if (!body?.name) {
+      isErr = true;
+      errors.name = "Name is required";
+    }
+    if (!body?.number) {
+      isErr = true;
+      errors.number = "Number is required";
+    }
+    if (!body?.email) {
+      isErr = true;
+      errors.email = "Email is required";
+    }
+    if (!body?.message) {
+      isErr = true;
+      errors.message = "Message is required";
+    }
+    if (isErr) {
+      setClientErr(errors);
+    } else {
+      setClientErr({});
+      handleSubmitForm(body);
+    }
   };
 
   const handleSubmitForm = async (body) => {
@@ -38,17 +64,23 @@ const GetInTouch = () => {
     }
   };
 
-
   return (
-    <div className={styles.get_in_container} id="contact-form" >
+    <div className={styles.get_in_container} id="contact-form">
       <div className={styles.inner_container}>
         <Grid container spacing={5}>
           <Grid item xs={12} md={6} lg={6}>
             <div className={styles.get_in_content_container}>
               <h2>Get in touch</h2>
-              <p><b>ADDRESS:</b> A-17 ROW-2, BlOCk 10-A, GULSHAN-E-IQBAL, Karachi 75290</p>
-              <p><b>Ph#:</b> +92331-2524490</p>
-              <p><b>Email:</b> hamzakhann66@gmail.com</p>
+              <p>
+                <b>ADDRESS:</b> A-17 ROW-2, BlOCk 10-A, GULSHAN-E-IQBAL, Karachi
+                75290
+              </p>
+              <p>
+                <b>Ph#:</b> +92331-2524490
+              </p>
+              <p>
+                <b>Email:</b> hamzakhann66@gmail.com
+              </p>
             </div>
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
@@ -67,6 +99,9 @@ const GetInTouch = () => {
                   setFormData({ ...formData, name: e?.target?.value })
                 }
               />
+              {clientErr?.name && (
+                <p className={styles.danger}>{clientErr?.name}</p>
+              )}
               <Input
                 inputType="outlined"
                 type="number"
@@ -77,6 +112,9 @@ const GetInTouch = () => {
                 }
                 maxLength={10}
               />
+              {clientErr?.number && (
+                <p className={styles.danger}>{clientErr?.number}</p>
+              )}
               <Input
                 inputType="outlined"
                 type="email"
@@ -86,6 +124,9 @@ const GetInTouch = () => {
                   setFormData({ ...formData, email: e?.target?.value })
                 }
               />
+              {clientErr?.email && (
+                <p className={styles.danger}>{clientErr?.email}</p>
+              )}
               <Textarea
                 inputType="outlined"
                 placeholder="Write your message here"
@@ -95,6 +136,9 @@ const GetInTouch = () => {
                   setFormData({ ...formData, message: e?.target?.value })
                 }
               />
+              {clientErr?.message && (
+                <p className={styles.danger}>{clientErr?.message}</p>
+              )}
               <div className={styles.btn_container}>
                 <SecondaryButton
                   type="outlined"
