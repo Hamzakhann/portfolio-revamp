@@ -26,6 +26,7 @@
     "react-slidy": "^4.3.3",
     "sass": "^1.50.0",
     "styled-components": "^5.3.6",
+    "tawkto-react": "^3.0.1",
     "validator": "^13.7.0"
   },
   "devDependencies": {

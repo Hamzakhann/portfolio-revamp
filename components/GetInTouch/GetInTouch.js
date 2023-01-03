@@ -16,6 +16,7 @@ const GetInTouch = () => {
   });
   const [isLoading, setIsLoading] = useState(false);
   const [clientErr, setClientErr] = useState({});
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const validatingBody = (body) => {
     let isErr = false;
@@ -57,7 +58,7 @@ const GetInTouch = () => {
       let response = await axios.post(`${api}/xwkyyzar`, body);
       let { ok } = response?.data;
       setIsLoading(false);
-      alert(ok ? "Successfully Submit" : "Something went wrong");
+      setIsSuccess(true);
     } catch (error) {
       setIsLoading(false);
       console.log(error);
@@ -84,71 +85,77 @@ const GetInTouch = () => {
             </div>
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
-            <div className={styles.get_in_form_container}>
-              {/* <h5>
+            {isSuccess ? (
+              <div className={styles.success_container}>
+                <img src="/Images/tick.png" alt="tick logo" />
+                <h5>Thank you I will get back to you soon</h5>
+              </div>
+            ) : (
+              <div className={styles.get_in_form_container}>
+                {/* <h5>
                 Thank you for contacting me for your next project. Just fill in
                 the form below with basic details and Our representative will
                 get back to you shortly
               </h5> */}
-              <Input
-                inputType="outlined"
-                type="text"
-                placeholder="Your Name"
-                value={formData?.name}
-                onChange={(e) =>
-                  setFormData({ ...formData, name: e?.target?.value })
-                }
-              />
-              {clientErr?.name && (
-                <p className={styles.danger}>{clientErr?.name}</p>
-              )}
-              <Input
-                inputType="outlined"
-                type="number"
-                placeholder="Mobile Number"
-                value={formData?.number}
-                onChange={(e) =>
-                  setFormData({ ...formData, number: e?.target?.value })
-                }
-                maxLength={10}
-              />
-              {clientErr?.number && (
-                <p className={styles.danger}>{clientErr?.number}</p>
-              )}
-              <Input
-                inputType="outlined"
-                type="email"
-                placeholder="Email Address"
-                value={formData?.email}
-                onChange={(e) =>
-                  setFormData({ ...formData, email: e?.target?.value })
-                }
-              />
-              {clientErr?.email && (
-                <p className={styles.danger}>{clientErr?.email}</p>
-              )}
-              <Textarea
-                inputType="outlined"
-                placeholder="Write your message here"
-                rows={8}
-                value={formData?.message}
-                onChange={(e) =>
-                  setFormData({ ...formData, message: e?.target?.value })
-                }
-              />
-              {clientErr?.message && (
-                <p className={styles.danger}>{clientErr?.message}</p>
-              )}
-              <div className={styles.btn_container}>
-                <SecondaryButton
-                  type="outlined"
-                  onClick={() => validatingBody(formData)}
-                  disabled={isLoading}
-                >
-                  {isLoading ? "Loading..." : "Send Message"}
-                </SecondaryButton>
+                <Input
+                  inputType="outlined"
+                  type="text"
+                  placeholder="Your Name"
+                  value={formData?.name}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e?.target?.value })
+                  }
+                />
+                {clientErr?.name && (
+                  <p className={styles.danger}>{clientErr?.name}</p>
+                )}
+                <Input
+                  inputType="outlined"
+                  type="number"
+                  placeholder="Mobile Number"
+                  value={formData?.number}
+                  onChange={(e) =>
+                    setFormData({ ...formData, number: e?.target?.value })
+                  }
+                />
+                {clientErr?.number && (
+                  <p className={styles.danger}>{clientErr?.number}</p>
+                )}
+                <Input
+                  inputType="outlined"
+                  type="email"
+                  placeholder="Email Address"
+                  value={formData?.email}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e?.target?.value })
+                  }
+                />
+                {clientErr?.email && (
+                  <p className={styles.danger}>{clientErr?.email}</p>
+                )}
+                <Textarea
+                  inputType="outlined"
+                  placeholder="Write your message here"
+                  rows={8}
+                  value={formData?.message}
+                  onChange={(e) =>
+                    setFormData({ ...formData, message: e?.target?.value })
+                  }
+                />
+                {clientErr?.message && (
+                  <p className={styles.danger}>{clientErr?.message}</p>
+                )}
+                <div className={styles.btn_container}>
+                  <SecondaryButton
+                    type="outlined"
+                    onClick={() => validatingBody(formData)}
+                    disabled={isLoading}
+                  >
+                    {isLoading ? "Loading..." : "Send Message"}
+                  </SecondaryButton>
+                </div>
               </div>
-            </div>
+            )}
           </Grid>
         </Grid>
       </div>

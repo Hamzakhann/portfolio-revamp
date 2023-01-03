@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../layout/layout";
 import HeroHeader from "../components/HeroHeader/HeroHeader";
 import TrustedCompanies from "../components/TrustedCompanies/TrustedCompanies";
@@ -16,8 +16,15 @@ import Footer from "../components/Footer/Footer";
 import SocialMedia from "../components/SocialMedia/SocialMedia";
 import GetInTouch from "../components/GetInTouch/GetInTouch";
 import AllSkills from "../components/AllSkills/AllSkills";
+import TawkTo from "tawkto-react";
 
 const Home = () => {
+  useEffect(() => {
+    let tawk = new TawkTo("62878e727b967b11799064e1", "1g3go8sdm");
+    tawk.onStatusChange((status) => {
+      // console.log(status);
+    });
+  }, []);
   return (
     <Layout>
       <HeroHeader />
