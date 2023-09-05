@@ -164,11 +164,11 @@ const Portfolio = () => {
           <ArrowForwardIcon />
         </div>
       </div>
-      <div className={styles.btn_container}>
+      {/* <div className={styles.btn_container}>
       <Link href="/#contact-form" passHref>
         <PrimaryButton>Let&apos;s Collaborate</PrimaryButton>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };

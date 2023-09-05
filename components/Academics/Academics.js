@@ -10,22 +10,22 @@ const Academics = () => {
       <Grid container spacing={5}>
         <Grid item xs={12} md={6}>
           <div className={styles.academics_content}>
-            <div className={styles.section}>
+          <div className={styles.section}>
               <div>
                 <Image
-                  src="/Images/ilma.png"
+                  src="/Images/ssuet.png"
                   width="60"
                   height="60"
                   objectFit="contain"
-                  alt="ilma.png"
+                  alt="ssuet.png"
                 />
               </div>
               <div>
                 <Typography variant="h5">
-                  ILMA University - Formerly IBT
+                Sir Syed University
                 </Typography>
-                <Typography variant="body1">BSCS, Computer Science</Typography>
-                <small>2016 - 2020</small>
+                <Typography variant="body1">MS, Computer Science</Typography>
+                <small>In Process</small>
               </div>
             </div>
             <div className={styles.section}>
@@ -52,6 +52,24 @@ const Academics = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <div className={styles.academics_content}>
+          <div className={styles.section}>
+              <div>
+                <Image
+                  src="/Images/ilma.png"
+                  width="60"
+                  height="60"
+                  objectFit="contain"
+                  alt="ilma.png"
+                />
+              </div>
+              <div>
+                <Typography variant="h5">
+                  ILMA University - Formerly IBT
+                </Typography>
+                <Typography variant="body1">BSCS, Computer Science</Typography>
+                <small>2017 - 2021</small>
+              </div>
+            </div>
             <div className={styles.section}>
               <div>
                 <Image
@@ -72,7 +90,7 @@ const Academics = () => {
                 <small>2011 - 2014</small>
               </div>
             </div>
-            <div className={styles.section}>
+            {/* <div className={styles.section}>
               <div>
                 <Image
                   src="/Images/shaheen.png"
@@ -87,7 +105,7 @@ const Academics = () => {
                 <Typography variant="body1">MATRICULATION</Typography>
                 <small>2009 - 2010</small>
               </div>
-            </div>
+            </div> */}
           </div>
         </Grid>
       </Grid>

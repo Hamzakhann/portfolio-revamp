@@ -56,12 +56,12 @@ const HeroHeader = () => {
               <Typography variant="h4">
                 ✨Launched multiple projects with different teams. I am always
                 ready for new challanges. I transform Ideas into products.
-                Customer Satisfaction is my foremost duty.
+                {/* Customer Satisfaction is my foremost duty. */}
               </Typography>
               <div className={styles.btn_container}>
-                <Link href="/#contact-form" passHref>
+                {/* <Link href="/#contact-form" passHref>
                   <PrimaryButton>Lets Collaborate</PrimaryButton>
-                </Link>
+                </Link> */}
                 <a href="/Resume.pdf" download="resume">
                   <SecondaryButton>Download Resume</SecondaryButton>
                 </a>

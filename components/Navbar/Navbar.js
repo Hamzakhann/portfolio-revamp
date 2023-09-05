@@ -24,7 +24,7 @@ const Navbar = () => {
         />
       </div>
       <div className={styles.navbar_links_container}>
-        <a
+        {/* <a
           href="#home"
           onClick={() => {
             localStorage.setItem("activeLink", "#home");
@@ -45,7 +45,7 @@ const Navbar = () => {
           <Typography variant="body1" className={handleLinkActive("#about")}>
             About
           </Typography>
-        </a>
+        </a> */}
         {/* <a
           href="#services"
           onClick={() => {
@@ -57,7 +57,7 @@ const Navbar = () => {
             Services
           </Typography>
         </a> */}
-        <a
+        {/* <a
           href="#portfolio"
           onClick={() => {
             localStorage.setItem("activeLink", "#portfolio");
@@ -70,7 +70,7 @@ const Navbar = () => {
           >
             Portfolio
           </Typography>
-        </a>
+        </a> */}
         <a href="#contact-form">
           <PrimaryButton>Contact Me</PrimaryButton>
         </a>

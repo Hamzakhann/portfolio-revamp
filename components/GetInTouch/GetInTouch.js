@@ -72,10 +72,10 @@ const GetInTouch = () => {
           <Grid item xs={12} md={6} lg={6}>
             <div className={styles.get_in_content_container}>
               <h2>Get in touch</h2>
-              <p>
+              {/* <p>
                 <b>ADDRESS:</b> A-17 ROW-2, BlOCk 10-A, GULSHAN-E-IQBAL, Karachi
                 75290
-              </p>
+              </p> */}
               <p>
                 <b>Ph#:</b> +92331-2524490
               </p>

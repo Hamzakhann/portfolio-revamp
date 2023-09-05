@@ -29,13 +29,13 @@ const Home = () => {
     <Layout>
       <HeroHeader />
       <TrustedCompanies />
-      <ChooseMe />
+      {/* <ChooseMe /> */}
       <Portfolio />
-      <ExperienceBarRate />
+      {/* <ExperienceBarRate /> */}
       <Academics />
 
-      <HowWork />
-      <Experience />
+      {/* <HowWork /> */}
+      {/* <Experience /> */}
 
       <Testimonials />
       <AllSkills />
